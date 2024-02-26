@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+body {
+    padding-top: 70px;
+}
+
+h1 {
+    color: black;
+    font-size: 12px;
+    float: right;
+    font-weight: 10px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #F7F9FA;
+    z-index: 1;
+}
+
+nav {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header img {
+    padding: 18px 10px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+}
+
+nav li a {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+}
+
+nav li a:hover {
+    color: #5E5D6E;
+}
+
+.parallax {
+    background-image: url("../img/fondoParalax.png");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax img {
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#btn-fixed {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.call-to-action {
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 0 30px;
+    text-align: center;
+}
+
+p.big {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.call-to-action h2,
+.call-to-action p,
+.call-to-action button {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 40px;
+    background-color: black;
+    font-size: 1em;
+    color: white;
+    webkit-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+
+button:hover {
+    background-color: #4A4959;
+}
+
+.fa-whatsapp {
+    color: green;
+    font-size: 3em;
+}
+
+.info-box {
+    background-color: #1C1D22;
+    margin: 0 auto;
+    padding: 110px 0;
+    color: white;
+    text-align: center;
+}
+
+.info-box h2 {
+    margin-bottom: 30px;
+}
+
+#flex-p {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flex-p p {
+    padding: 30px;
+    max-width: 300px;
+}
+
+.fa-heart,
+.fa-bullhorn,
+.fa-laptop {
+    font-size: 2.7em;
+    display: block;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.description-box {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.description-box h2 {
+    text-align: center;
+}
+
+.img-container {
+    margin: 20px 0 80px 0;
+    box-sizing: border-box;
+    webkit-box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 30px;
+}
+
+.img-container img,
+img-container p {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.img-container p {
+    text-align: justify;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    clear: both;
+    background-color: black;
+}
+
+.social-icons {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-tiktok {
+    font-size: 2em;
+    color: white;
+}
+
+
+@media screen and (max-width: 700px) {
+    .img-container {
+        width: 100%;
+        margin: 0;
+    }
+}

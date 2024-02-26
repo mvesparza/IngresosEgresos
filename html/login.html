@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/login.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <title>Iniciar Sesión - QuickEconomy</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"><img src="../img/marca.png" alt="GE logo" width="392" height="392"></a>
+        </nav>
+    </header>
+    <div class="login-container">
+        <form id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" id="login-btn">Iniciar Sesión</button>
+        </form>
+
+        <p class="create-account-link">¿No tienes una cuenta? <a href="signup.html">Crear cuenta</a></p>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

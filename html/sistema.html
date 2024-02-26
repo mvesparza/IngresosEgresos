@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/sistema.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <title>Sistema - QuickEconomy</title>
+</head>
+<body>
+    <div class="sistema-container">
+        <button id="logout-btn" class="logout-btn">Cerrar Sesión</button>
+        <h2>Administre Ingresos y Egresos</h2>
+
+        <div class="ingresos-container">
+            <h3>Ingresos: $<span id="totalIngresos">0.00</span></h3>
+            <form id="ingresos-form" class="form">
+                <table>
+                    <tr>
+                        <td><label for="fechaIngreso">Fecha:</label></td>
+                        <td>
+                            <input type="checkbox" id="autoFechaIngreso" checked>
+                            <label for="autoFechaIngreso">Actual</label>
+                            <input type="date" id="fechaIngreso" required>
+                        </td>
+                        <td>Descripción:</td>
+                        <td><input type="text" id="descripcionIngreso" required></td>
+                        <td>Monto:</td>
+                        <td><input type="number" id="montoIngreso" min="0" step="0.01" required placeholder="0.01 $"></td>
+                        <td>Persona:</td>
+                        <td><input type="text" id="personaIngreso" placeholder="Realizado por" required></td>
+                        <td><button type="button" id="agregarIngresoBtn">Agregar Ingreso</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div class="egresos-container">
+            <h3>Egresos: $<span id="totalEgresos">0.00</span></h3>
+            <form id="egresos-form" class="form">
+                <table width="95%">
+                    <tr>
+                        <td><label for="fechaEgreso">Fecha:</label></td>
+                        <td>
+                            <input type="checkbox" id="autoFechaEgreso" checked>
+                            <label for="autoFechaEgreso">Actual</label>
+                            <input type="date" id="fechaEgreso" required>
+                        </td>
+                        <td>Descripción:</td>
+                        <td><input type="text" id="descripcionEgreso" required></td>
+                        <td>Monto:</td>
+                        <td><input type="number" id="montoEgreso" min="0" step="0.01" required placeholder="0.01 $"></td>
+                        <td>Persona:</td>
+                        <td><input type="text" id="personaEgreso" placeholder="Realizado por" required></td>
+                        <td><button type="button" id="agregarEgresoBtn">Agregar Egreso</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- Tabla para mostrar los ingresos y egresos -->
+        <div class="table-container">
+            <table id="movimientos-table">
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Mes</th>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                        <th>Tipo</th>
+                        <th>Persona</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <p>&nbsp;</p>
+        <button id="reporte-btn" class="reporte-btn">Generar Reporte</button>
+    </div>
+
+    <button id="volver-arriba-btn" class="volver-arriba-btn" onclick="scrollToTop()">Volver arriba</button>
+
+    <script src="../js/sistema.js"></script>
+</body>
+</html>
